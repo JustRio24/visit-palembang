@@ -1,34 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <title>Redirecting...</title>
-    <style>
-      body {
-        font-family: sans-serif;
-        text-align: center;
-        padding: 2rem;
-      }
-    </style>
-    <script>
-      // Ambil path dari URL yang diminta
-      const base = "/visit-palembang";
-      const path = window.location.pathname;
-
-      // Jika path sudah diawali base, redirect ke situ
-      if (path.startsWith(base)) {
-        window.location.replace(base + "/#" + path.slice(base.length));
-      } else {
-        // fallback ke home jika path gak sesuai
-        window.location.replace(base + "/");
-      }
-    </script>
+    <meta http-equiv="refresh" content="0; url=/visit-palembang/" />
   </head>
   <body>
-    <h1>Redirecting...</h1>
-    <p>
-      If you are not redirected automatically,
-      <a href="/visit-palembang/">click here</a>.
-    </p>
+    <p>Redirecting...</p>
   </body>
 </html>
