@@ -13,12 +13,15 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/destinations" element={<DestinationPage />} />
-          <Route path="/map" element={<MapTransportPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/plan" element={<PlanPage />} />
+          <Route path="visit-palembang/" element={<HomePage />} />
+          <Route path="visit-palembang/gallery" element={<GalleryPage />} />
+          <Route
+            path="visit-palembang/destinations"
+            element={<DestinationPage />}
+          />
+          <Route path="visit-palembang/map" element={<MapTransportPage />} />
+          <Route path="visit-palembang/contact" element={<ContactPage />} />
+          <Route path="visit-palembang/plan" element={<PlanPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>
