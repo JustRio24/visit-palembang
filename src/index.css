@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Dancing";
+  src: url("/src/assets/font/DancingScript-Regular.ttf") format("truetype");
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-dancing: Dancing, "cursive";
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.shiny-text {
+  background: linear-gradient(
+    35deg,
+    #ec4899 0%,
+    #f97316 25%,
+    #ec4899 75%,
+    #f97316 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: shine 12s linear infinite;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  10%,
+  90% {
+    opacity: 1;
+  }
+}
+.animate-fadeInOut {
+  animation: fadeInOut 3s ease forwards;
+}
